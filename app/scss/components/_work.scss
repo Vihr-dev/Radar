@@ -1,0 +1,23 @@
+.work {
+  padding-top: 130px;
+margin-bottom: 130px;
+
+  &__title {
+    @extend %stratos;
+    font-size: 45px;
+    line-height: 1;
+
+    span {
+      @extend %title;
+    }
+  }
+
+  &__text {
+    display: flex;
+    margin-right: 18%;
+
+    .text:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+}

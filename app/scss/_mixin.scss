@@ -1,0 +1,19 @@
+@mixin clamp($clamp) {
+  display: -webkit-box;
+  -webkit-line-clamp: $clamp;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@mixin a($width) {
+  @media only screen and (max-width: $width+ "px"){
+    @content;
+  }
+}
+
+@mixin amin($width) {
+  @media only screen and (min-width: $width+"px"){
+    @content;
+  }
+}
+

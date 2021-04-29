@@ -1,0 +1,109 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  line-height: 1.6;
+  @extend %formular-light;
+}
+
+main {
+  flex-grow: 1;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  &:active {
+    opacity: 0.5;
+  }
+
+  &:focus {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #000;
+  }
+}
+
+.container {
+  max-width: 1220px;
+  padding: 0 15px;
+  margin: 0 auto;
+
+  &--big {
+    max-width: 1395px;
+  }
+}
+
+.logo {
+  display: inline-block;
+  transition: opacity 0.3s;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.title {
+  font-size: 16px;
+  color: $text;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  @extend %stratos;
+  font-size: 30px;
+  line-height: 1.3;
+  margin-bottom: 70px;
+}
+
+.section-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text {
+  @extend %formular-light;
+  max-width: 325px;
+  color: $text;
+}
+
+.button {
+  text-transform: lowercase;
+  padding: 15px 27px;
+  border: 1px solid #000;
+  border-radius: 30px;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: $accent;
+  }
+
+  &:active {
+    background-color: #fff;
+  }
+
+  &:focus {
+    background-color: $accent;
+    padding-bottom: 15px;
+  }
+}
+
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  /* added line */
+  border: 0;
+}

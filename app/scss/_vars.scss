@@ -1,0 +1,30 @@
+$text: #1b1b1b;
+$accent: #538172;
+
+%formular-light {
+  font-family: 'Formular', san-serif;
+  font-weight: 300;
+}
+
+%formular-regular {
+  font-family: 'Formular', san-serif;
+  font-weight: 400;
+}
+
+%title {
+  font-family: 'inter', san-serif;
+  font-weight: 500;
+}
+
+%stratos {
+  font-family: 'StratosLCWeb', san-serif;
+  font-weight: 500;
+}
+
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
+}
