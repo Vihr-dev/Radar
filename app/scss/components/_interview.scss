@@ -1,0 +1,15 @@
+.interview{
+  &__subtitle{
+    margin-bottom: 24px;
+  }
+  &__link{
+    text-transform: uppercase;
+    text-decoration: underline;
+    display: inline-block;
+    margin-bottom: 94px;
+
+    &:visited{
+      opacity: 0.5;
+    }
+  }
+}
