@@ -40,5 +40,8 @@
   &__text {
     display: inline-block;
     max-width: 326px;
+    p{
+      @include clamp(9)
+    }
   }
 }

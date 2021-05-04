@@ -55,5 +55,6 @@
   &__text {
     display: block;
     padding-top: 15px;
+    @include clamp(1);
   }
 }
