@@ -1,0 +1,44 @@
+.services {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__info {
+    max-width: 795px;
+  }
+
+  &__list {
+  display: flex;
+  flex-wrap: wrap;
+  }
+
+  &__item {
+    display: inline-flex;
+    margin-bottom: 110px;
+
+    &:nth-child(2) {
+      margin-top: 16%; 
+    }
+
+    &:nth-child(2n){
+      margin-left: auto;
+    }
+
+    &:nth-child(2n+3){
+      margin-top: -16%;
+    }
+  }
+
+  &__num {
+    @extend %stratos;
+    font-size: 56px;
+    line-height: 1;
+    margin-right: 12px;
+  }
+
+  &__text {
+    display: inline-block;
+    max-width: 326px;
+  }
+}

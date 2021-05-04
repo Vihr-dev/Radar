@@ -1,0 +1,59 @@
+.video {
+  margin-bottom: 130px;
+
+  &__link {
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:hover .video__svg {
+      opacity: 1;
+    }
+
+    &:active .video__svg {
+      fill: #fff;
+    }
+
+    &:focus {
+      outline: solid $text 2px;
+    }
+  }
+
+  &__bg {
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    position: relative;
+
+    img {
+      position: absolute;
+      height: auto;
+      width: 100%;
+      object-fit: cover;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  &__svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 110px;
+    fill: #fff;
+    opacity: 0.6;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+    transition: fill 0.3s opacity 0.3s;
+
+    &:hover {
+      fill: $text;
+    }
+  }
+
+  &__text {
+    display: block;
+    padding-top: 15px;
+  }
+}

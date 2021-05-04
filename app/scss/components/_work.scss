@@ -1,6 +1,9 @@
 .work {
-  padding-top: 130px;
-margin-bottom: 130px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 130px;
+  }
 
   &__title {
     @extend %stratos;
