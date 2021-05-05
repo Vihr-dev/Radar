@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Radar</title>
   <link rel="icon" href="images/radar.ico" type="images/radar.ico">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -57,8 +58,14 @@
               </a>
             </li>
           </ul>
-
         </div>
+        <button class="header__burger">
+          <svg width="40" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="40" height="2" rx="1" fill="black" />
+            <rect y="10" width="40" height="2" rx="1" fill="black" />
+            <rect x="20" y="20" width="20" height="2" rx="1" fill="black" />
+          </svg>
+        </button>
       </div>
     </div>
   </header>
@@ -67,17 +74,17 @@
 
     <section class="work">
       <div class="container">
-        <h1 class="work__title">
+        <h1 class="work__title wow animate__animated animate__fadeIn">
           <span>RADAR</span> — исследовательское агентство.
         </h1>
-        <div class="subtitle">
+        <div class="subtitle wow animate__animated animate__fadeIn">
           Мы поможем вам принять бизнес-решения на основе данных
         </div>
         <div class="work__inner">
-          <h2 class="title">
+          <h2 class="title wow animate__animated animate__bounceInLeft">
             Что мы делаем >>
           </h2>
-          <div class="work__text">
+          <div class="work__text wow animate__animated animate__fadeIn" data-wow-delay="1s">
             <div class="text">
               <p>
                 Проводим исследования рынка, анализируем бренды, изучаем клиентов, тестируем рекламу, моделируем
@@ -96,7 +103,7 @@
       </div>
     </section>
 
-    <div class="video">
+    <!-- <div class="video wow animate__animated animate__fadeIn" data-wow-delay="1.5s">
       <div class="container">
         <a class="video__link" data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk">
           <div class="video__bg">
@@ -114,14 +121,14 @@
 
     <section class="services">
       <div class="container">
-        <div class="subtitle">
+        <div class="subtitle wow animate__animated animate__fadeIn" data-wow-offset="50">
           Проводим все виды исследований бренда, клиентов, продукта, цены, рекламы
         </div>
         <div class="services__inner">
-          <h2 class="title">
+          <h2 class="title wow animate__animated animate__bounceInLeft" data-wow-offset="50">
             Услуги >>
           </h2>
-          <div class="services__info">
+          <div class="services__info wow animate__animated animate__fadeIn" data-wow-delay="1s">
             <ul class="services__list">
               <li class="services__item">
                 <span class="services__num">1</span>
@@ -167,19 +174,19 @@
 
     <section class="clients">
       <div class="container">
-        <div class="subtitle">
+        <div class="subtitle wow animate__animated animate__fadeIn" data-wow-offset="50">
           Ценим близкую модель сотрудничества с клиентами, когда мы понимаем друг друга с полуслова. Растим бизнес
           вместе
         </div>
         <div class="clients__inner">
-          <h2 class="title">
+          <h2 class="title wow animate__animated animate__bounceInLeft" data-wow-offset="50">
             Клинты >>
           </h2>
-          <ul class="clients__list">
-            <li class="clients__item">
-              <a class="clients__link" height="50" href="#">
-                <img src="images/partners/1.jpg" alt="partner">
-              </a>
+          <ul class="clients__list wow animate__animated animate__bounceInRight" data-wow-delay="0.5s"">
+            <li class=" clients__item">
+            <a class="clients__link" height="50" href="#">
+              <img src="images/partners/1.jpg" alt="partner">
+            </a>
             </li>
             <li class="clients__item">
               <a class="clients__link" href="#">
@@ -229,7 +236,8 @@
             </li>
           </ul>
         </div>
-        <button class="button clients__btn" type="button">
+        <button class="button clients__btn wow animate__animated animate__bounceInRight" data-wow-delay="0.5s" type="
+          button">
           Ещё клиенты
         </button>
       </div>
@@ -237,14 +245,14 @@
 
     <section class="evolution">
       <div class="container">
-        <div class="subtitle">
+        <div class="subtitle wow animate__animated animate__fadeIn" data-wow-offset="50">
           Мы за умную, вдумчивую, осознанную работу. Постоянно развиваемся содержательно и технологически
         </div>
         <div class="evolution__inner">
-          <h2 class="title">
+          <h2 class="title wow animate__animated animate__bounceInLeft" data-wow-offset="50">
             Развитие >>
           </h2>
-          <div class="evolution__info">
+          <div class="evolution__info wow animate__animated animate__bounceInRight" data-wow-delay="0.5s">
             <div class="evolution__content">
               <h3 class="evolution__title">
                 Школа
@@ -280,14 +288,14 @@
 
     <section class="team">
       <div class="container">
-        <div class="subtitle team__subtitle">
+        <div class="subtitle team__subtitle wow animate__animated animate__fadeIn" data-wow-offset="50">
           Тщательно подбираем команду неравнодушных, бережно выстраиваем agile-взаимодействие. Делаем одно дело вместе
         </div>
         <div class="team__inner">
-          <h2 class="title">
+          <h2 class="title wow animate__animated animate__bounceInLeft" data-wow-offset="50">
             Команда >>
           </h2>
-          <div class="team__slider">
+          <div class="team__slider wow animate__animated animate__bounceInRight" data-wow-delay="1s">
             <div class="team__photo">
               <img src="images/team/1.jpg" alt="photo">
             </div>
@@ -310,10 +318,10 @@
 
     <div class="interview">
       <div class="container">
-        <div class="subtitle interview__subtitle">
+        <div class="subtitle interview__subtitle wow animate__animated animate__fadeIn" data-wow-offset="50">
           Заполните бриф, мы свяжемся с вами для уточнения деталей
         </div>
-        <a class="interview__link" href="#">
+        <a class="interview__link wow animate__animated animate__bounceInLeft" data-wow-offset="50" href=" #">
           Перейти к заполнению брифа >>
         </a>
       </div>
@@ -341,7 +349,7 @@
         </a>
       </div>
     </div>
-  </footer>
+  </footer> -->
 
 
   <script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"> </script>

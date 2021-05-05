@@ -18,7 +18,10 @@
   &__text {
     display: flex;
     margin-right: 18%;
-    @include clamp(6);
+
+    p {
+      @include clamp(6);
+    }
 
     .text:not(:last-child) {
       margin-right: 20px;
